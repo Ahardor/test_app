@@ -2,6 +2,8 @@ library parameters;
 
 import 'package:flutter/material.dart';
 
+String url = "https://d5dsstfjsletfcftjn3b.apigw.yandexcloud.net/";
+
 class AppColors {
   static MaterialColor accent = makeColor(const Color(0xFFF2796B));
   static MaterialColor bg = makeColor(const Color(0xFFf6f6f6));
