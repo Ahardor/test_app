@@ -1,19 +1,45 @@
 name: test_app
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.3.0-174.3.beta <4.0.0'
+    sdk: ">=3.3.0-174.3.beta <4.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
+    flutter:
+        sdk: flutter
+    flutter_bloc: ^8.1.4
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.0
+    flutter_test:
+        sdk: flutter
+    flutter_lints: ^3.0.0
 
 flutter:
-  uses-material-design: true
+    uses-material-design: true
+
+    assets:
+        - assets/
+        - assets/outfit_font/
+
+    fonts:
+        - family: Outfit
+          fonts:
+              - asset: assets/outfit_font/Outfit-Regular.ttf
+              - asset: assets/outfit_font/Outfit-SemiBold.ttf
+                weight: 600
+              - asset: assets/outfit_font/Outfit-Bold.ttf
+                weight: 700
+              - asset: assets/outfit_font/Outfit-ExtraBold.ttf
+                weight: 800
+              - asset: assets/outfit_font/Outfit-Black.ttf
+                weight: 900
+              - asset: assets/outfit_font/Outfit-Medium.ttf
+                weight: 500
+              - asset: assets/outfit_font/Outfit-Light.ttf
+                weight: 300
+              - asset: assets/outfit_font/Outfit-Thin.ttf
+                weight: 100
+              - asset: assets/outfit_font/Outfit-ExtraLight.ttf
+                weight: 200
